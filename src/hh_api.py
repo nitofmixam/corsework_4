@@ -5,7 +5,7 @@ from src.abstracted_classes import Parser
 
 class HeadHunterAPI(Parser):
     """Класс для подключения к сайту HH.ru"""
-    def get_vacancies(self, name_job, pages):
+    def get_vacancies(self, name_job: str, pages: int):
         hh_list = []
 
         for i in range(pages):
