@@ -5,7 +5,7 @@ class Parser(ABC):
     """Абстрактный класс для метода получения вакансий"""
 
     @abstractmethod
-    def get_vacancies(self, name_job, pages):
+    def get_vacancies(self, name_job: str, pages: int):
         pass
 
 
